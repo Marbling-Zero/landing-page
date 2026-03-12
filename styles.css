@@ -34,3 +34,45 @@ header {
     color: white;
     text-decoration: none;
 }
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: #1F2937;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+}
+
+.hero-left {
+    flex-basis: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.signup-button {
+    width: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(59, 136, 252, 0.986);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    flex-grow: 0;
+}
+
+.placeholder-image {
+    height: 200px;
+    width: 500px;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
