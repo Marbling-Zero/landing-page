@@ -7,16 +7,19 @@
     font-family: 'Roboto';
 }
 
-.container {
-    padding-left: 100px;
-    padding-right: 100px;
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
+    flex: 1;
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 200px;
     background-color: #1F2937;
 }
 
@@ -38,13 +41,12 @@ header {
 }
 
 .hero {
+    flex: 3;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
     background-color: #1F2937;
-    padding-top: 50px;
-    padding-bottom: 50px;
     color: white;
 }
 
@@ -54,6 +56,15 @@ header {
     flex-direction: column;
     gap: 5px;
 
+}
+
+.hero-left h1 {
+    font-size: 30px;
+}
+
+.hero-left p {
+    font-size: 12px;
+    color: rgb(211, 211, 211)
 }
 
 .signup-button {
@@ -69,9 +80,13 @@ header {
     flex-grow: 0;
 }
 
+.signup-button:hover{
+    cursor: pointer;
+}
+
 .placeholder-image {
-    height: 200px;
-    width: 500px;
+    height: 150px;
+    width: 300px;
     background-color: bisque;
     display: flex;
     align-items: center;
@@ -80,18 +95,17 @@ header {
 }
 
 .features {
-    padding-top: 30px;
-    padding-bottom: 100px;
+    flex: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
 }
 
 .feature-cards {
     display: flex;
-    gap: 30px;
+    gap: 15px;
 }
 
 .card {
@@ -102,8 +116,8 @@ header {
 }
 
 .card-image {
-    height: 145px;
-    width: 140px;
+    height: 125px;
+    width: 120px;
     border: 3px solid rgba(59, 136, 252, 0.986);
     border-radius: 15px;
 }
@@ -114,9 +128,11 @@ header {
 }
 
 .testimonial {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    flex: 2;
     background-color: rgb(233, 233, 233);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .testimonial blockquote {
@@ -140,15 +156,15 @@ header {
 }
 
 .call-to-action {
+    flex: 2;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 300px;
 }
 
 .call-to-action-card {
-    width: 60%;
-    height: 50%;
+    width: 35%;
+    padding: 30px 0;
     border-radius: 10px;
     background-color: #3b82f6;
 
@@ -157,6 +173,14 @@ header {
     justify-content: center;
     gap: 80px;
     color: white;
+}
+
+.call-to-action-text h3 {
+    font-size: 15px;
+}
+
+.call-to-action-text p {
+    font-size: 12px;
 }
 
 .call-to-action-button {
@@ -168,11 +192,13 @@ header {
 }
 
 footer {
+    flex: 1/2;
     background-color: #1F2937;
-    color: white;
+    color: rgb(212, 212, 212);
     padding-top: 15px;
     padding-bottom: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 15px;
 }
