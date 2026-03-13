@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap');
 
 * {
     padding: 0;
@@ -111,4 +111,58 @@ header {
 .card-text {
     font-size: 13px;
     text-align: center;
+}
+
+.testimonial {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: rgb(233, 233, 233);
+}
+
+.testimonial blockquote {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 22px;
+}
+
+.testimonial p {
+    font-weight: 300;
+
+}
+
+.testimonial cite{
+    align-self: end;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.call-to-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+.call-to-action-card {
+    width: 60%;
+    height: 50%;
+    border-radius: 10px;
+    background-color: #3b82f6;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    color: white;
+}
+
+.call-to-action-button {
+    padding: 10px 40px;
+    border: 2px solid white;
+    background-color:#3b82f6;
+    color: white;
+    border-radius: 7px;
 }
